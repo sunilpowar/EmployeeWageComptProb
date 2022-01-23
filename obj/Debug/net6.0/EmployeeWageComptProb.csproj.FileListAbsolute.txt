@@ -1,0 +1,5 @@
+C:\Users\Shree\source\repos\EmployeeWageComptProb\obj\Debug\net6.0\EmployeeWageComptProb.csproj.AssemblyReference.cache
+C:\Users\Shree\source\repos\EmployeeWageComptProb\obj\Debug\net6.0\EmployeeWageComptProb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shree\source\repos\EmployeeWageComptProb\obj\Debug\net6.0\EmployeeWageComptProb.AssemblyInfoInputs.cache
+C:\Users\Shree\source\repos\EmployeeWageComptProb\obj\Debug\net6.0\EmployeeWageComptProb.AssemblyInfo.cs
+C:\Users\Shree\source\repos\EmployeeWageComptProb\obj\Debug\net6.0\EmployeeWageComptProb.csproj.CoreCompileInputs.cache
