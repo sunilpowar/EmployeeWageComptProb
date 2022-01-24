@@ -11,7 +11,7 @@ namespace EmployeeWageComptProb
         static void Main(string[] args)
         {
             Console.WriteLine("WELCOME");
-            EmplWage.EmpAttendance();
+            
             Console.ReadLine();
         }
     }
