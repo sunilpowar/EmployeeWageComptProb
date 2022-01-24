@@ -8,31 +8,36 @@ namespace EmployeeWageComptProb
 {
     internal class EmplWage
     {
-        public static void EmpAttendance()
+        public const int IS_PART_TIME = 1;
+        public const int IS_FULL_TIME = 2;
+        public const int EMP_RATE_PER_HOUR = 20;
+        public const int NUM_OF_WORKING_DAYS = 20;
+        public const int MAX_HRS_IN_MONTH = 100;
+        int empHrs = 0, totalEmpHrs = 0, totalWorkingDays = 0, totalEmpWage;
+        public void MonthlyEmpWage()
         {
-            int IS_FULL_TIME = 1;
-            int IS_PART_TIME = 2;
-            int EMP_RATE_PER_HOUR = 20;
-            int empHr = 0;
-            int empWage = 0;
-            Random random = new Random();
-            int empCheck = random.Next(0, 3);
-            if (empCheck == IS_PART_TIME)
+            while (totalEmpHrs <= MAX_HRS_IN_MONTH && totalWorkingDays < NUM_OF_WORKING_DAYS)
             {
-                empHr = 4;
+                totalWorkingDays++;
+                Random random = new Random();
+                int empCheck = random.Next(0, 3);
+                switch (empCheck)
+                {
+                    case IS_PART_TIME:
+                        empHrs = 4;
+                        break;
+                    case IS_FULL_TIME:
+                        empHrs = 8;
+                        break;
+                    default:
+                        empHrs = 0;
+                        break;
+                }
+                totalEmpHrs += empHrs;
+                Console.WriteLine("Day#:" + totalWorkingDays + " Employee Hours : " + empHrs);
             }
-            else if (empCheck == IS_FULL_TIME)
-            {
-                empHr = 8;
-            }
-            else
-            {
-                empHr = 0;
-            }
-            empWage = empHr * EMP_RATE_PER_HOUR;
-            Console.WriteLine("Emp Wage" + empWage);
-            Console.ReadLine();
-
+            totalEmpWage = totalEmpHrs * EMP_RATE_PER_HOUR;
+            Console.WriteLine("Total Employee Wage : " + totalEmpWage);
         }
     }
 }
