@@ -12,6 +12,8 @@ namespace EmployeeWageComptProb
         {
             Console.WriteLine("WELCOME");
             EmplWage.EmpAttendance();
+            employee.ComputeEmpwage("DMart", 20, 2, 10);
+            employee.ComputeEmpwage("Reliance", 10, 4, 20);
             Console.ReadLine();
         }
 
